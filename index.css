@@ -1,0 +1,219 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+body {
+  color: white;
+}
+html {
+  font-size: 62.5%;
+  font-family: "lato", sans-serif;
+  font-size: 400;
+}
+
+h1 {
+  /* border: 2px solid rebeccapurple; */
+  margin-top: 3rem;
+  position: relative;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 5rem;
+  font-style: italic;
+  text-shadow: 4px 3px 5px rgb(209, 209, 209);
+  letter-spacing: 3px;
+  word-spacing: 4px;
+}
+
+.align {
+  display: flex;
+  /* border: 2px solid rebeccapurple; */
+  width: 70%;
+  margin: auto;
+  margin-top: 2rem !important;
+  /* border: none; */
+}
+.main input:nth-child(1) {
+  width: 86%;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 2rem;
+  background-color: white;
+  outline: none;
+}
+.main input {
+  box-shadow: 4px 0px 10px 2px rgba(162, 240, 245, 0.705);
+  overflow: none;
+}
+.main input:nth-child(2) {
+  width: 22%;
+  border: none;
+  margin-left: 2rem;
+  border-radius: 2rem;
+  color: white;
+  cursor: pointer;
+  font-size: 2.5rem;
+  transition: 0.5s;
+}
+
+.main input:nth-child(2):hover {
+  transform: translateY(-5px);
+  background-color: rgba(0, 0, 0, 0.61);
+}
+
+.enter-section {
+  /* border: 2px solid red; */
+  display: flex;
+  margin-top: 5rem !important;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.enter-section li {
+  /* border: 2px solid red; */
+  width: 80%;
+  font-size: 2.5rem;
+  padding: 10px 10px;
+  list-style: none;
+}
+.icons {
+  /* border: 2px solid red; */
+  width: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item {
+  /* border: 2px solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bi {
+  font-size: 2.8rem;
+  margin-left: 1.5rem;
+  cursor: pointer;
+}
+.bi-check-circle {
+  color: chartreuse;
+}
+.bi-pencil-square {
+  color: rgb(11, 171, 245);
+}
+.bi-x-circle {
+  color: red;
+}
+.clear {
+  /* border: 2px solid red; */
+  display: flex;
+  margin-top: 4rem !important;
+}
+.clear input {
+  margin: auto;
+  color: white;
+  font-size: 1.8rem;
+  padding: 10px 30px;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  box-shadow: 4px 0px 10px 2px rgba(162, 240, 245, 0.705);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.clear input:hover {
+  transform: translatey(5px);
+}
+
+@media (max-width: 1060px) {
+  .enter-section p {
+    /* border: 2px solid red; */
+    width: 75%;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1060px) {
+  .align {
+    width: 80%;
+  }
+  .enter-section p {
+    font-size: 1.8rem;
+  }
+  .bi {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+  }
+  .main input:nth-child(2) {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 55.5%;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 45.5%;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 40%;
+  }
+  .align {
+    width: 90%;
+  }
+  .main {
+    margin-top: 5rem !important;
+  }
+  .main input:nth-child(1) {
+    width: 80%;
+    padding: 8px 8px;
+  }
+
+  .main input:nth-child(2) {
+    width: 30%;
+    padding: 8px 8px;
+  }
+
+  .enter-section p {
+    /* border: 2px solid red; */
+    width: 70%;
+    font-size: 2rem;
+    padding: 10px 10px;
+  }
+  .enter-section .icons {
+    /* border: 2px solid red; */
+    width: 30%;
+  }
+  .bi {
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+  }
+}
+.hide {
+  display: none;
+}
+
+.pattern {
+  text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.432);
+}
+
+/* <p id="text">Hello , type above here...!</p>
+<div class="icons">
+  <i class="bi bi-check-circle" id="done"></i>
+  <i class="bi bi-pencil-square edit"></i>
+  <i class="bi bi-x-circle delete"></i>
+</div> */
